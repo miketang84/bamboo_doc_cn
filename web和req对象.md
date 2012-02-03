@@ -179,11 +179,11 @@ Request object is a lua table in Bamboo, usually, when passed into handler, use 
 
 	URI of this request.
 
-##### `req.headers.keep-alive`
+- `req.headers.keep-alive`
 
 	Something like '115'.
 
-##### `req.headers.accept-encoding`
+- `req.headers.accept-encoding`
 
 	Something like 'gzip,deflate'.
 
