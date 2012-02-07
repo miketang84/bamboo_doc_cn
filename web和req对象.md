@@ -2,6 +2,10 @@
 
 bamboo工程中的每个handler，必须接收两个固定的参数`web`和`req`，`web`是连接对象，里面封装有一些处理请求的方法，`req`是请求对象，内含请求的所有属性。每进来一个请求，都会生成一个新的`web`对象和`req`对象，供handler调用。
 
+通常，使用`web:page(html_str)`来返回html内容给客户端，使用`web:json(lua_table)`来返回json表给客户端。
+
+下面列出web object和req object的详细内容。
+
 ### Web Object
 
 ##### - `web:page(data, code, status, headers)`
