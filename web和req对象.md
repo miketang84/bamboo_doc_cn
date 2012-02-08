@@ -100,6 +100,18 @@ bamboo工程中的每个handler，必须接收两个固定的参数`web`和`req`
 
 Request object is a lua table in Bamboo, usually, when passed into handler, use `req` to refer this table. `req` usually contains the following attributes:
 
+##### - `req.GET`
+
+	GET请求传上来的参数放在这里面。
+
+##### - `req.POST`
+
+	POST请求传上来的参数放在这里面。
+	
+##### - `req.PARAMS`
+
+	GET或POST请求传上来的参数放在这里面。对于req.GET和req.POST中有相同的key的情况，以req.POST中的值为准；
+
 ##### - `req.conn_id`
 
 	The connection id passed into bamboo by mongrel2.
