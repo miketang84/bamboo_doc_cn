@@ -44,4 +44,4 @@ QuerySet 是从数据库中检索出来的模型实例列表。
 
 ## QuerySet的继承关系图
 
-![QuerySet继承关系图](/daogangtang/bamboo_doc_cn/blob/master/images/query_set.png)
+![QuerySet继承关系图](/daogangtang/bamboo_doc_cn/blob/master/images/query_set.png?raw=true)
