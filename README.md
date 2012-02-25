@@ -22,3 +22,6 @@ Bamboo的以上特点，使得它特别适合成为云计算PaaS平台的中间�
 目前，Bamboo已经用在了我公司及客户的数个网站上。
 
 请猛击 [目录](/daogangtang/bamboo_doc_cn/blob/master/目录.md) 。
+
+如发现文档中有缺陷的地方，欢迎向 daogangtang@gmail.com 发送电子邮件指正，谢谢。
+

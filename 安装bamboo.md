@@ -68,62 +68,40 @@
 
 ##### 安装monserver
 
-	git://github.com/daogangtang/monserver.git
-	cd monserver
-	make
-	sudo make install
+	git clone git://github.com/daogangtang/monserver.git
 
 ##### 安装lua-zmq
 
 	git clone git://github.com/iamaleksey/lua-zmq.git 
-	cd lua-zmq 
-	make                   
-	sudo cp zmq.so /usr/local/lib/lua/5.1/       
 
 ##### 安装lgstring
 
-	git://github.com/daogangtang/lgstring.git 
-	cd lgstring
-	make
-	sudo cp lgstring.so /usr/local/lib/lua/5.1/
+	git clone git://github.com/daogangtang/lgstring.git 
 	
 ##### 安装monserver-lua 
 
-	git://github.com/daogangtang/monserver-lua.git 
-	sudo ln -sdf  ~/GIT/monserver-lua/src   /usr/local/share/lua/5.1/monserver
+	git clone git://github.com/daogangtang/monserver-lua.git 
 
 ##### 安装redis-lua 
 
 	git clone git://github.com/nrk/redis-lua.git 
-	sudo ln -sf  ~/GIT/redis-lua/src/redis.lua   /usr/local/share/lua/5.1/ 
 
 ##### 安装tnetstrings.lua 
 
 	git clone git://github.com/jsimmons/tnetstrings.lua.git 
-	sudo ln -sf  ~/GIT/tnetstrings.lua/tnetstrings.lua   /usr/local/share/lua/5.1/ 
 
 ##### 安装luajson 
 
 	git clone git://github.com/daogangtang/luajson.git 
-	cd luajson && sudo make install && cd ..
 	
 ##### 安装lglib 
 
 	git clone git://github.com/daogangtang/lglib.git 
-	sudo ln -sdf ~/GIT/lglib   /usr/local/share/lua/5.1/ 
 
 ##### 安装bamboo 
 
 	git clone git://github.com/daogangtang/bamboo.git 
-	sudo ln -sdf ~/GIT/bamboo   /usr/local/share/lua/5.1/ 
-	sudo ln -sf /usr/local/share/lua/5.1/bamboo/bin/bamboo /usr/local/bin/ 
-	sudo ln -sf /usr/local/share/lua/5.1/bamboo/bin/bamboo_handler /usr/local/bin/ 
-
-##### 创建monserver的工作目录 
-
-	mkdir -p ~/workspace && cd ~/workspace 
-	mkdir monserver && cd monserver 
-	mkdir logs run sites tmp sites/apptest 
+	cd bamboo && sudo make install && cd ..
 
 ## 测试 
 
