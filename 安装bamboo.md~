@@ -35,7 +35,7 @@
 	make 
 	sudo make install 
 
-编辑配置文件 /etc/redis.conf，如果没有此文件就把当前redis源代码包中的redis.conf文件拷贝到/etc/下面去。配置文件可根据实际需求做更改。我的配置文件在[这里](others/redis.conf.md)，供参考。
+编辑配置文件 /etc/redis.conf，如果没有此文件就把当前redis源代码包中的redis.conf文件拷贝到/etc/下面去。配置文件可根据实际需求做更改。我的配置文件在[这里](others/redis.conf.md)，供参考：
 
 ## rocks依赖包安装部分 
 

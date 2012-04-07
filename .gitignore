@@ -1,0 +1,6 @@
+*~
+media/uploads/
+*.so
+*.la
+*.a
+*.o

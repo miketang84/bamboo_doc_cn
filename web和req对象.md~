@@ -216,6 +216,5 @@ bamboo工程中的每个handler，必须接收两个固定的参数`web`和`req`
 	Something like 'gzip,deflate'.
 
 -----------------------------------
-
 PS：由于太常用了，我们把web和req导出成了**全局变量**，在bamboo工程中的每一个地方都可以访问到。
 
