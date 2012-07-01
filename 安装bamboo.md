@@ -1,7 +1,7 @@
 
 
 
-以Ubuntu 10.04为例。从前到后依次执行。你也可以下载脚本包[bamboo_installer-v1.1.1.tar.gz](https://github.com/downloads/daogangtang/bamboo_doc_cn/bamboo_installer-v1.1.1.tar.gz)，解压后，运行可执行脚本便会自动安装（需确保系统已经安装了lua5.1，如果没有，请使用 `sudo apt-get install lua5.1`来安装）。
+以Ubuntu 10.04为例。从前到后依次执行。你也可以下载脚本包[bamboo_installer-v1.2.tar.gz](https://github.com/downloads/daogangtang/bamboo_doc_cn/bamboo_installer-v1.2.tar.gz)，解压后，运行可执行脚本便会自动安装（需确保系统已经安装了lua5.1，如果没有，请使用 `sudo apt-get install lua5.1`来安装）。
 
 ## APT安装部分
 ##### 安装gcc等基本编译环境 
