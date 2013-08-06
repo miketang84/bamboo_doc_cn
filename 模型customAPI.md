@@ -5,20 +5,20 @@ Redis相对于传统的SQL数据库，一个很大的优势就是灵活性。为
 这套API可以被模型调用，也可以被实例调用。
 
 ## APIs
-##### model_obj:setCustom(key, val, st, scores)	
+##### model_obj:setCustom(key, val, stype, scores)	
 
 	创建一个custom key，将val值写入此key中。
 	- key		自定义的key
 	- val		要存的值，可以为string, list, table, 
-	- st		存储类型。只能取nil, 'string', 'list', 'set', 'zset', 'hash' 中的一个
+	- stype		存储类型。只能取nil, 'string', 'list', 'set', 'zset', 'hash' 中的一个
 	- scores	当存储类型为'zset'的时候，可以为zset的元素指定score，是一个数字list
 
-##### model_obj:getCustom(key, atype)	
+##### model_obj:getCustom(key, stype)	
 
 	获取custom key的所有内容
 	
 	- key		自定义的key
-	- atype		指明要取的键的类型，取'string', 'list', 'set', 'zset', 'hash' 中的一个
+	- stype		指明要取的键的类型，取'string', 'list', 'set', 'zset', 'hash' 中的一个
 
 ##### model_obj:getCustomKey(key)
 
@@ -41,10 +41,11 @@ Redis相对于传统的SQL数据库，一个很大的优势就是灵活性。为
 	删除custom key中的val元素
 	- val		某一个元素
 
-##### model_obj:addCustomMember(key, val, score)	
+##### model_obj:addCustomMember(key, val, stype, score)	
 
 	添加一个member到custom key中去
 	- val		新元素值
+	- stype		指定键key的类型
 	- score		可选。当st为'zset'的时候，可以为其赋予一个score值，以决定添加后的顺序
 
 ##### model_obj:hasCustomMember(key, mem)
@@ -57,7 +58,7 @@ Redis相对于传统的SQL数据库，一个很大的优势就是灵活性。为
 	测量custom key中有几个元素
 
 ## 说明
-在内部，custom key是被限制在model_obj下面的。也就是说，不存在独立的custom key，总是需要依附某一个model而存在。
+在内部，custom key是被限制在`model_obj`下面的。也就是说，不存在独立的custom key，总是需要依附某一个model而存在。
 
 比如，User模型，使用  
 
